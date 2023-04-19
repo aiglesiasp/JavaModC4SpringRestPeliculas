@@ -52,6 +52,7 @@ public class SalaController {
 		Sala sala_seleccionada = new Sala();
 		Sala sala_actualizada = new Sala();
 		sala_seleccionada = salaServiceImpl.empleadoById(codigo);
+		sala_seleccionada.setCodigo(sala.getCodigo());
 		sala_seleccionada.setNombre(sala.getNombre());
 		sala_seleccionada.setPelicula(sala.getPelicula());
 

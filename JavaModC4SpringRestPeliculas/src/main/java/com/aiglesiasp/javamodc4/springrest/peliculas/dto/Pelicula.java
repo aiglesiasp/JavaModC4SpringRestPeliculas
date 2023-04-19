@@ -34,7 +34,7 @@ public class Pelicula {
 	private int calificacionEdad;
 
 	@OneToMany
-	@JoinColumn(name = "codigo")
+	@JoinColumn(name = "sala")
 	private List<Sala> sala;
 
 	@JsonIgnore
